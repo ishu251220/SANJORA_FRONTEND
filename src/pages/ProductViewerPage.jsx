@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import ProductPreview from "../pages/ProductViewer";
+import ProductPreview from "../components/ProductViewer";
 
 const FooterContainer = styled.div``;
 const Ul = styled.ul``;
@@ -23,12 +22,8 @@ const product = {
   ],
   sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
 };
-const Footer = () => {
-  return (
-    <FooterContainer>
-      <ProductPreview product={product} />
-    </FooterContainer>
-  );
+const ProductViewerComponent = () => {
+  return <ProductPreview product={product} />;
 };
 
-export default Footer;
+export default ProductViewerComponent;

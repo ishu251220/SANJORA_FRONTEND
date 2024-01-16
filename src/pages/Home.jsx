@@ -1,8 +1,6 @@
-import React from "react";
-import Footer from "../components/Footer";
-
+import ProductViewerPage from "../pages/ProductViewerPage";
 const Home = () => {
-  return <Footer />;
+  return <ProductViewerPage />;
 };
 
 export default Home;
